@@ -16,5 +16,14 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void CleanButton_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now;
+            ValueTextBox.Text = "";
+            OperatorComboBox.SelectedIndex = -1;
+            FieldComboBox.SelectedIndex = -1;
+        }
     }
 }
